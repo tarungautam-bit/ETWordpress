@@ -1,0 +1,31 @@
+2023-07-11T19:02:42+00:00 ERROR Could not enable webhook for localhost
+2023-07-11T19:02:42+00:00 INFO Trying to create one_cc_address_sync_cron
+2023-07-11T19:02:42+00:00 INFO Failed to create one_cc_address_sync_cron as invalid one cc merchant
+2023-07-11T19:02:42+00:00 INFO Attempting to delete one_cc_address_sync_cron, status: cancelled, message: invalid_1cc_merchant
+2023-07-11T19:02:42+00:00 INFO Deleted one_cc_address_sync_cron  if exists
+2023-07-11T19:02:42+00:00 INFO updateAddressSyncCronData: status=cancelled, message=invalid_1cc_merchant, cronStatus=deleted
+2023-07-11T19:02:42+00:00 INFO updateAddressSyncCronData:530 - Updating option: ONE_CC_ADDRESS_SYNC_CRON_HOOK
+2023-07-11T19:02:42+00:00 INFO updateAddressSyncCronData:532 -  Successfully Updated Option: ONE_CC_ADDRESS_SYNC_CRON_HOOK
+2023-07-11T19:02:42+00:00 INFO create one_cc_plugin_sync_cron successful
+2023-07-11T19:03:56+00:00 INFO Called process_payment with params order_id 99
+2023-07-11T19:03:56+00:00 INFO Set transient with key razorpay_wc_order_id params order_id 99
+2023-07-11T19:03:56+00:00 INFO getRazorpayPaymentParams 99
+2023-07-11T19:03:56+00:00 INFO createOrGetRazorpayOrderId 99 and is1ccCheckout is set to no
+2023-07-11T19:03:56+00:00 INFO Called createOrGetRazorpayOrderId with params orderId 99 and is_magic_checkout_order is set to no
+2023-07-11T19:03:56+00:00 INFO razorpayOrderId  | sessionKey razorpay_order_id99
+2023-07-11T19:03:56+00:00 INFO Called createRazorpayOrderId with params orderId 99 and sessionKey razorpay_order_id99
+2023-07-11T19:03:56+00:00 INFO Called getOrderCreationData with params orderId 99
+2023-07-11T19:03:56+00:00 INFO Called getOrderCreationData with params orderId 99 and is1ccOrder is set to no
+2023-07-11T19:03:56+00:00 INFO For order 99
+2023-07-11T19:03:56+00:00 INFO {"receipt":99,"amount":212000,"currency":"INR","payment_capture":1,"app_offer":0,"notes":{"woocommerce_order_number":"99"}}
+2023-07-11T19:03:58+00:00 INFO For order session key razorpay_order_id99
+2023-07-11T19:06:18+00:00 INFO Called check_razorpay_response: wc_order_2qsgIouQrT1Fi
+2023-07-11T19:06:18+00:00 INFO Get order id in check_razorpay_response: orderId 99
+2023-07-11T19:06:18+00:00 INFO verifySignature orderId: 99
+2023-07-11T19:06:18+00:00 INFO verifySignature attr
+2023-07-11T19:06:18+00:00 INFO {"razorpay_payment_id":"pay_MCbTY47M7FzqN3","razorpay_signature":"0abe4477fb85c6e6f2fd76abb8229a3c304fcde3c5b3ea518e49168d8d20caf3","razorpay_order_id":"order_MCbRLmWrBzK4Xp"}
+2023-07-11T19:06:18+00:00 INFO updateOrder orderId: 99 , razorpayPaymentId: pay_MCbTY47M7FzqN3 , success: 1
+2023-07-11T19:06:18+00:00 INFO Order details check initiated step 1 for the orderId: 99
+2023-07-11T19:06:22+00:00 INFO Woocommerce orderId: 99 processed through callback
+2023-07-11T20:00:35+00:00 ERROR cURL error 28: SSL connection timeout
+2023-07-11T20:00:35+00:00 ERROR cURL error 28: SSL connection timeout
