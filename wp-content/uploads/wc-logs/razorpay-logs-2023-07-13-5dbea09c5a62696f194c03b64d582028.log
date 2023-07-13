@@ -1,2 +1,23 @@
 2023-07-13T12:43:16+00:00 INFO Execute one_cc_plugin_sync_cron successful
 2023-07-13T12:43:18+00:00 ERROR 
+2023-07-13T12:47:08+00:00 INFO Called process_payment with params order_id 105
+2023-07-13T12:47:08+00:00 INFO Set transient with key razorpay_wc_order_id params order_id 105
+2023-07-13T12:47:10+00:00 ERROR Could not enable webhook for localhost
+2023-07-13T12:47:10+00:00 INFO getRazorpayPaymentParams 105
+2023-07-13T12:47:10+00:00 INFO createOrGetRazorpayOrderId 105 and is1ccCheckout is set to no
+2023-07-13T12:47:10+00:00 INFO Called createOrGetRazorpayOrderId with params orderId 105 and is_magic_checkout_order is set to no
+2023-07-13T12:47:10+00:00 INFO razorpayOrderId  | sessionKey razorpay_order_id105
+2023-07-13T12:47:10+00:00 INFO Called createRazorpayOrderId with params orderId 105 and sessionKey razorpay_order_id105
+2023-07-13T12:47:10+00:00 INFO Called getOrderCreationData with params orderId 105
+2023-07-13T12:47:10+00:00 INFO Called getOrderCreationData with params orderId 105 and is1ccOrder is set to no
+2023-07-13T12:47:10+00:00 INFO For order 105
+2023-07-13T12:47:10+00:00 INFO {"receipt":105,"amount":45000,"currency":"INR","payment_capture":1,"app_offer":0,"notes":{"woocommerce_order_number":"105"}}
+2023-07-13T12:47:12+00:00 INFO For order session key razorpay_order_id105
+2023-07-13T12:51:40+00:00 INFO Called check_razorpay_response: wc_order_xJY9vGVwSvUtB
+2023-07-13T12:51:40+00:00 INFO Get order id in check_razorpay_response: orderId 105
+2023-07-13T12:51:40+00:00 INFO verifySignature orderId: 105
+2023-07-13T12:51:40+00:00 INFO verifySignature attr
+2023-07-13T12:51:40+00:00 INFO {"razorpay_payment_id":"pay_MDI9fEjPQr3bAV","razorpay_signature":"edb1619b099c5940ad8a9c843c45c40e46af78cebdab05c446fada7c02ae6bc1","razorpay_order_id":"order_MDI5b6SEFAXtKl"}
+2023-07-13T12:51:40+00:00 INFO updateOrder orderId: 105 , razorpayPaymentId: pay_MDI9fEjPQr3bAV , success: 1
+2023-07-13T12:51:40+00:00 INFO Order details check initiated step 1 for the orderId: 105
+2023-07-13T12:51:44+00:00 INFO Woocommerce orderId: 105 processed through callback
